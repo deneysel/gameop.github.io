@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Optimizer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Game Optimizer</h1>
+    </header>
+    <section class="search-bar">
+        <input type="text" id="search" placeholder="Ekran kartı ara..." autocomplete="off">
+        <div id="gpuList" class="gpu-list-container"></div>
+    </section>
+    <section class="game-list">
+        <h2>Oyunlar</h2>
+        <ul id="gameContainer">
+        </ul>
+    </section>
+    <script src="/static/scripts.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyDi-IC-Rc9w44BJ9Sr4TNgULDhVbJYFhts",
+    authDomain: "game-optimezer.firebaseapp.com",
+    projectId: "game-optimezer",
+    storageBucket: "game-optimezer.appspot.com",
+    messagingSenderId: "335458804287",
+    appId: "1:335458804287:web:9856133ce8e20cb37f0e8a",
+    measurementId: "G-YP28XFH8WT"
+    };
+
+  // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>

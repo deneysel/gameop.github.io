@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.search-bar {
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+}
+
+#search {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#gpuList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#gpuList li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.game-list {
+    padding: 2rem;
+    margin-top: -2rem;
+    text-align: left;
+    padding-left: 25%;
+}
+
+.game-list h2 {
+    margin-bottom: 1rem;
+}
+
+.game-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.game-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.game-logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.game-title {
+    font-weight: bold;
+}
+
+/* ... diğer stil tanımlamaları ... */
+
+#gpuList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gpuList.show {
+    display: block;
+}
+
+/* ... diğer stil tanımlamaları ... */
+
+/* ... diğer stil tanımlamaları ... */
+
+.gpu-list-container {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.gpu-list-container.show {
+    display: block;
+}
+
+.gpu-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.gpu-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* ... diğer stil tanımlamaları ... */
